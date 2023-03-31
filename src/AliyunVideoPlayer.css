@@ -1,0 +1,50 @@
+.aliyun-video-player-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.aliplayer-custom-button {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.aliplayer-custom-button.prev-video {
+  background-image: url("https://path/to/your/prev-icon.png");
+}
+
+.aliplayer-custom-button.next-video {
+  background-image: url("https://path/to/your/next-icon.png");
+}
+
+.watermark {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.top-right {
+  top: 10px;
+  right: 10px;
+}
+
+.top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+
+.bottom-left {
+  bottom: 10px;
+  left: 10px;
+}
