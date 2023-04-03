@@ -24,7 +24,9 @@ const AliyunVideoPlayer = ({
         // 更多配置选项可以在这里添加
       });
     } else {
-      console.error("Aliplayer is not defined. Please make sure the aliplayer-min.js script is loaded.");
+      console.error(
+        "Aliplayer is not defined. Please make sure the aliplayer-min.js script is loaded."
+      );
     }
 
     return () => {
@@ -51,8 +53,15 @@ const AliyunVideoPlayer = ({
     <div className="aliyun-video-player-container">
       <div id={`aliyun-video-player-${Date.now()}`} ref={playerRef}></div>
       <Watermark text="Dynamically Scrolling Watermark" />
-      <button onClick={prevVideo} disabled={currentVideoIndex === 0}>上一节</button>
-      <button onClick={nextVideo} disabled={currentVideoIndex === videoSources.length - 1}>下一节</button>
+      <button onClick={prevVideo} disabled={currentVideoIndex === 0}>
+        上一节
+      </button>
+      <button
+        onClick={nextVideo}
+        disabled={currentVideoIndex === videoSources.length - 1}
+      >
+        下一节
+      </button>
     </div>
   );
 };
